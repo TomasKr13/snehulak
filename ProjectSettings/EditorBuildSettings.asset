@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Snehulak/3Level.unity
     guid: 4af41bbd320cf2a48ab70ed30eb7f6d0
+  - enabled: 1
+    path: Assets/Snehulak/4Level.unity
+    guid: e2b4c9ebc25b4574f9b4e7e571cf7489
+  - enabled: 1
+    path: Assets/Snehulak/5Level.unity
+    guid: 12de1f66d04fd844aba877e3d6636562
   m_configObjects: {}
