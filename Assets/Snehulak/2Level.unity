@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 46307472}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Booster
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ca710ad7ac2d44d9947de2a181f517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedIncrease: 1000
+  speedIncrease: 10
 --- !u!114 &46307473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,13 +518,14 @@ GameObject:
   - component: {fileID: 87772329}
   - component: {fileID: 87772328}
   - component: {fileID: 87772327}
+  - component: {fileID: 87772330}
   m_Layer: 0
   m_Name: Snehulak (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &87772327
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -535,7 +536,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0358539, y: -0.029231396}
@@ -608,6 +609,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &87772330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87772326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d607f575d376bdd43a021420163b419c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 3Level
 --- !u!1 &92165839
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +883,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 205254041}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: af84174cdc7b7bf4fae4f8faa9764f61, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1525,7 +1539,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 470420798}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: af84174cdc7b7bf4fae4f8faa9764f61, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1662,7 +1676,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 482946128}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: af84174cdc7b7bf4fae4f8faa9764f61, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2644,6 +2658,7 @@ GameObject:
   - component: {fileID: 999831232}
   - component: {fileID: 999831231}
   - component: {fileID: 999831230}
+  - component: {fileID: 999831233}
   m_Layer: 0
   m_Name: Klic
   m_TagString: Untagged
@@ -2748,6 +2763,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999831233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999831229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde48183534625e4dbcf61f55b76148a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToAppear: {fileID: 87772326}
 --- !u!1 &1005094385
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,7 +3593,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1497755981}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: af84174cdc7b7bf4fae4f8faa9764f61, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -3918,7 +3946,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1775011909}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: af84174cdc7b7bf4fae4f8faa9764f61, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

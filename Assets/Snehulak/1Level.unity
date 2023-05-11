@@ -1359,7 +1359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 290, y: 242.5}
+  m_AnchoredPosition: {x: 323, y: 297}
   m_SizeDelta: {x: 66.6161, y: 60.8374}
   m_Pivot: {x: 0.5, y: 0.19907203}
 --- !u!114 &656422522
@@ -1551,13 +1551,14 @@ GameObject:
   - component: {fileID: 809971242}
   - component: {fileID: 809971241}
   - component: {fileID: 809971240}
+  - component: {fileID: 809971243}
   m_Layer: 0
   m_Name: Snehulak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &809971240
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1568,7 +1569,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0358539, y: -0.029231396}
@@ -1641,6 +1642,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &809971243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809971239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d607f575d376bdd43a021420163b419c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 2Level
 --- !u!1 &858542167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,7 +2304,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1169798198}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: af84174cdc7b7bf4fae4f8faa9764f61, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -3860,7 +3874,7 @@ GameObject:
   - component: {fileID: 1765895805}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Booster
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4523,6 +4537,7 @@ GameObject:
   - component: {fileID: 2047067235}
   - component: {fileID: 2047067234}
   - component: {fileID: 2047067233}
+  - component: {fileID: 2047067236}
   m_Layer: 0
   m_Name: Klic
   m_TagString: Untagged
@@ -4627,3 +4642,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2047067236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047067232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde48183534625e4dbcf61f55b76148a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToAppear: {fileID: 809971239}

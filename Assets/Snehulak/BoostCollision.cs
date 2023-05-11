@@ -19,12 +19,14 @@ public class BoostCollision : MonoBehaviour
 
     
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Booster"))
         {
-            Rigidbody rb = GetComponent<Rigidbody>();
-            rb.velocity *= speedIncrease; // Multiply the current velocity by the speed increase
+            if(transform.localScale.y >= 2f)
+            {
+                transform.localScale /= 2f;
+            }
         }
     }
 

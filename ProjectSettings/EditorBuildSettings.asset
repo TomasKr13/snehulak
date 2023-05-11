@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Snehulak/5Level.unity
     guid: 12de1f66d04fd844aba877e3d6636562
+  - enabled: 1
+    path: Assets/Snehulak/GameOver.unity
+    guid: 1ff530bcf8cb8564b85e5ec1425c4fc3
   m_configObjects: {}
