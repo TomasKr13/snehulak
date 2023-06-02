@@ -11,7 +11,13 @@ public class SceneChanger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneName);
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Player");
+            Vector3 maxSize = new Vector3(1.5f, 1.5f, 0);
+            if (gameObjects[0].transform.localScale.x < maxSize.x && gameObjects[0].transform.localScale.y < maxSize.y)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+
         }
     }
 }

@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BallMovement : MonoBehaviour
 {
     private Rigidbody2D rb2D;
+    Canvas canvas;
+    int score;
     Vector2 firstClick;
     Vector2 secondClick;
     Vector2 firstAndSecond;
     float force;
     float degree;
+    public TextMeshProUGUI text;
     Vector3 mousePos;
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        score = 0;
     }
 
     void Update()
@@ -34,6 +39,9 @@ public class BallMovement : MonoBehaviour
 
             Vector3 direction = Quaternion.AngleAxis(degree, Vector3.forward) * Vector3.right;
             rb2D.AddForce(direction * force);
+            score++; 
+            text.text = score.ToString();
+            
         }
     }
 }
